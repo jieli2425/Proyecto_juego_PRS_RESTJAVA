@@ -22,7 +22,7 @@ public class Juego {
         if (!partidas.containsKey(idPartida)) {
             if ("jugador1".equals(nombre)) {
                 partidas.put(idPartida, new Partida(idPartida, nombre));
-                return Response.ok().entity("Partida creada. Esperando jugador 2.").build();
+                return Response.ok().entity("Partida creada. Esperando a jugador 2.").build();
             }
             return Response.status(Response.Status.NOT_FOUND).entity("Partida no encontrada").build();
         }
